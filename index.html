@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Convertisseur</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="scripts/converter.js" async></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Convertisseur</h1>
+        </header>
+
+        <main>
+            <section id="section-category">
+                <label for="category">Catégorie :</label>
+                <select name="category" id="category">
+                </select>
+            </section>
+
+            <section id="section-values">
+                <article id="article-input">
+                    <input id="input-value" type="number" step="any">
+                    <select name="input-unit" id="input-unit">
+                    </select>
+                </article>
+
+                <article id="article-equalsign">
+                    <p>=</p>
+                </article>
+
+                <article id="article-output">
+                    <input id="output-value" readonly>
+                    <select name="output-unit" id="output-unit">
+                    </select>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+/*
+    STYLES GLOBAUX
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+main {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+section, article {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section {
+    padding: 1rem;
+}
+
+
+#section-category label {
+    margin-bottom: 0.5rem;
+    /*font-size: 1rem;*/
+}
+
+#article-equalsign {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+select {
+    font-size: 0.9rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+select, input, output {
+    border: 1px solid #ccc;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+input {
+    width: 100%;       /*  Permet d'éviter le dépassement causé par font-size */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: -1px;
+    outline: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    header, main {
+        width: 60%;
+        margin: auto;
+    }
+
+    #section-values {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #article-input, #article-output {
+        flex: 0 0 45%;
+    }
+}
